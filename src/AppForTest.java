@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * 
  */
@@ -12,8 +14,9 @@ public class AppForTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-
+		Scanner input = new Scanner(System.in);
+		System.out.println("Input Number to get a Fibbonacci of:");
+		long calc = input.nextLong();
 	}
 	public long computeFibbonacci(long n) {
 		
