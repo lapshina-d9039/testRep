@@ -17,8 +17,11 @@ public class AppForTest {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Input Number to get a Fibbonacci of:");
 		long calc = input.nextLong();
+		long result = computeFibbonacci(calc);
+		System.out.println("The Fibbonacci of " + calc + " is: " +result);
+		input.close();
 	}
-	public long computeFibbonacci(long n) {
+	public static long computeFibbonacci(long n) {
 		
 		// if input is negative - throw exception
 		if (n < 0) {
